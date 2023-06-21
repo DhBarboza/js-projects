@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unit Converter</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>Unit Converter</h1>
-        <div class="input-group">
-            <label for="input">Enter the amount: </label>
-            <input type="number" id="input" name="input" placeholder="0">
-        </div>
-        <div class="input-group">
-            <label for="from">From: </label>
-        </div>
+      <h1>Unit Converter</h1>
+      <div class="input-group">
+        <label for="input">Enter the amount: </label>
+        <input type="number" id="input" name="input" placeholder="0" />
+      </div>
+
+      <div class="input-group">
+        <label for="from">From: </label>
+        <select name="from" id="from">
+          <option value="m">Meters (M)</option>
+          <option value="km">Kilometers (km)</option>
+          <option value="cm">Centimeters (cm)</option>
+          <option value="mm">Millimeters (mm)</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="to">To: </label>
+        <select name="to" id="to">
+          <option value="m">Meters (M)</option>
+          <option value="km">Kilometers (km)</option>
+          <option value="cm">Centimeters (cm)</option>
+          <option value="mm">Millimeters (mm)</option>
+        </select>
+      </div>
     </div>
-</body>
+  </body>
 </html>
