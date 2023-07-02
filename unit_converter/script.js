@@ -1,4 +1,5 @@
 // Select Elements
+// A função querySelector retorna um objeto que representa o elemento HTML:
 const inputElement = document.querySelector("#input");
 const fromElement = document.querySelector("#from");
 const toElement = document.querySelector("#to");
@@ -67,4 +68,6 @@ function convert() {
     return;
 }
 
+/* Essa função é usada para detectar quando ocorre um determinado evento em um elemento 
+e executar uma função de retorno (callback) em resposta a esse evento.*/
 convertButton.addEventListener("click", convert);
