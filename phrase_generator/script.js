@@ -1,5 +1,5 @@
 // Criar um array de opções para que possam ser consultadas:
-const Quote = [
+const quotes = [
     {
         quote: "A mente que se abre a uma nova ideia jamais voltará ao seu tamanho original.",
         author: "Albert Einstein",
@@ -43,11 +43,16 @@ const Quote = [
 ];
 
 // Obter os elementos HTML:
-const quoteBtn = document.querySelector("#quoteBtn");
-const quoteText = document.querySelector(".text");
-const quoteAuthor = document.querySelector(".author");
+const quoteBtn = document.getElementById("quoteBtn");
+const quoteText = document.querySelector(".quote .txt");
+const quoteAuthor = document.querySelector(".quote .author");
 
 function getQuote() {
-    const index = Math.random() * quote.length;
+    const index = Math.floor(Math.random() * quotes.length);
     console.log(index);
+
+    quoteText.textContent = quotes[index].quote;
+    quoteAuthor.textContent = "- " + quotes[index].author;
 }
+
+quoteBtn.addEventListener("click", getQuote);
